@@ -1,8 +1,12 @@
+
+/* VARIABEL WARNA */
 :root {
     --pr-color: #6016fc;
     --se--color: rgba(255, 255, 255, 0.1);
+    --green--color: #16FCD2;
 }
 
+/* BODY */
 body {
     font-family: "Noto Sans", sans-serif;
     background-image: url("../IMG/BACKGROUND-BODY.png");
@@ -10,6 +14,13 @@ body {
     height: 5895px;
 }
 
+/* ALL SECTION */
+
+section {
+    padding-top: 6rem;
+}
+
+/* NAVBAR */
 .nav-color {
     background-color: var(--se--color);
     transition: all ease-in-out 0.3s;
@@ -23,10 +34,11 @@ body {
     font-size: 29px;
 }
 
-.nav-link.active {
+.nav-link:hover {
     font-weight: 700;
     font-size: 19px;
     opacity: 1;
+    color: #fff;
 }
 
 .nav-link {
@@ -40,7 +52,8 @@ body {
 }
 
 .masuk-daftar .button-masuk {
-    width: 116px;
+    padding-left: 30px;
+    padding-right: 30px;
     height: 39px;
     background-color: var(--se--color);
     border: none;
@@ -49,10 +62,133 @@ body {
 }
 
 .masuk-daftar .button-daftar {
-    width: 116px;
+    padding-left: 30px;
+    padding-right: 30px;
     height: 39px;
     background-color: var(--pr-color);
     border: none;
     border-radius: 3px;
     color: #fff;
 }
+
+.masuk-daftar #masuk:hover {
+    font-weight: 700;
+}
+
+.masuk-daftar #daftar:hover {
+    font-weight: 700;
+}
+
+/* END NAVBAR */
+
+/* BERANDA */
+
+#beranda .container {
+    padding-top: 5rem;
+    padding-bottom: 12rem;
+}
+
+.beranda-kalimat h1 {
+    font-size: 20px;
+    color: var(--green--color);
+}
+
+.beranda-kalimat h3 {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.beranda-kalimat p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.button-beranda .mulai {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    background-color: var(--pr-color);
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-beranda .selengkapnya {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    background-color: var(--se--color);
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+/* END BERANDA */
+
+/* KAMUS */
+
+#kamus .container h2 {
+    font-size: 19px;
+    color: #16FCD2;
+}
+
+#kamus .container h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.form-kamus .container {
+    width: 880px;
+}
+
+.form-kamus .form-control {
+    background-color: var(--se--color);
+    border: none;
+    color: #fff;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 19px;
+    width: 650px;
+}
+
+.form-kamus .terjemahkan {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    background-color: var(--pr-color);
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-kamus .btn {
+    background-color: var(--pr-color);
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.form-kamus .hasiltraslate {
+    width: 860px;
+}
+
+.form-kamus .form-label {
+    color: #fff;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+
+
+/* END KAMUS */

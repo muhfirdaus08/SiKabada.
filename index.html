@@ -34,10 +34,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item mx-2">
-                            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                            <a class="nav-link" href="#">Beranda</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Kamus</a>
+                            <a class="nav-link" href="#kamus">Kamus</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="#">Artikel</a>
@@ -52,8 +52,8 @@
 
                     <!-- MASUK DAN DAFTAR -->
                     <div class="masuk-daftar">
-                        <button class="button-masuk mx-2">Masuk</button>
-                        <button class="button-daftar mx-2">Daftar</button>
+                        <input type="button" class="button-masuk mx-2" id="masuk" value="Masuk" />
+                        <input type="button" class="button-daftar mx-2" id="daftar" value="Daftar" />
                     </div>
                 </div>
             </div>
@@ -62,11 +62,76 @@
 
         <!-- BERANDA -->
         <section id="beranda">
-            <div class="beranda-kalimat"></div>
+            <div class="container text-center">
+                <div class="content-beranda">
+                    <div class="beranda-kalimat">
+                        <h1>KAMUS BAHASA DAERAH DIGITAL</h1>
+                        <h3 class="mt-4 mb-3">
+                            Mari Melestarikan Bahasa <br />
+                            Daerah yang Ada di Indonesia
+                        </h3>
+                        <p>Indonesia memiliki 718 bahasa daerah yang eksistensinya wajib <br />dilindungi karena merupakan warisan sekaligus identitas bangsa</p>
+                    </div>
 
-            <div class="beranda-button"></div>
+                    <div class="button-beranda">
+                        <input type="button" class="mulai me-3 mt-1" value="Mulai" />
+                        <input type="button" class="selengkapnya ms-1" value="Pelajari Selengkapnya" />
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- END BERANDA -->
+
+        <!-- KAMUS -->
+        <section id="kamus">
+            <div class="container">
+                <div class="kalimat text-center">
+                    <h2 class="mb-3">KAMUS</h2>
+                    <h3>
+                        Ketahui Arti Kata Suatu <br />
+                        Bahasa Daerah dengan Cepat
+                    </h3>
+                </div>
+
+                <div class="form-kamus mt-4">
+                    <div class="container justify-content-center">
+                        <div class="row g-2 justify-content-between">
+                            <div class="col-auto">
+                                <input class="form-control" type="text" placeholder="Masukan sebuah kata" aria-label="kata" />
+                            </div>
+
+                            <div class="col-auto ms-3">
+                                <input type="button" class="terjemahkan" value="Terjemahkan" />
+                            </div>
+                        </div>
+
+                        <div class="row-two btn-group dropend mt-3">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pilih Bahasa</button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Sasak</a></li>
+                                <li><a class="dropdown-item" href="#">Sumbawa</a></li>
+                                <li><a class="dropdown-item" href="#">Mbojo</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="row-three row mt-4 justify-content-start">
+                            <div class="col-auto">
+                                <label for="hasilterjemahanan" class="form-label">Hasil Terjemahan</label>
+                                <input type="text" class="form-control hasiltraslate" id="hasilter" value="null" readonly />
+                            </div>
+                        </div>
+
+                        <div class="row-three row mt-4 justify-content-start">
+                            <div class="col-auto">
+                                <label for="hasilterjemahanan" class="form-label">Pengucapan</label>
+                                <input type="text" class="form-control hasiltraslate" id="hasilter" value="null" readonly />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END KAMUS -->
 
         <!-- JS -->
         <script src="./JS/script.js"></script>
