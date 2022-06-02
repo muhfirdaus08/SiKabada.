@@ -1,0 +1,58 @@
+:root {
+    --pr-color: #6016fc;
+    --se--color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-image: url("../IMG/BACKGROUND-BODY.png");
+    background-size: cover;
+    height: 5895px;
+}
+
+.nav-color {
+    background-color: var(--se--color);
+    transition: all ease-in-out 0.3s;
+}
+
+.bg-transparent {
+    transition: all ease-in-out 0.3s;
+}
+
+.navbar-brand.sikabada {
+    font-size: 29px;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    font-size: 19px;
+    opacity: 1;
+}
+
+.nav-link {
+    font-size: 19px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.masuk-daftar {
+    font-size: 19px;
+}
+
+.masuk-daftar .button-masuk {
+    width: 116px;
+    height: 39px;
+    background-color: var(--se--color);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.masuk-daftar .button-daftar {
+    width: 116px;
+    height: 39px;
+    background-color: var(--pr-color);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
