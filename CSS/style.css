@@ -24,6 +24,7 @@ section {
 .nav-color {
     background-color: var(--se--color);
     transition: all ease-in-out 0.3s;
+    z-index: 1;
 }
 
 .bg-transparent {
@@ -179,7 +180,7 @@ section {
     padding-right: 30px;
 }
 
-.form-kamus .hasiltraslate {
+.form-kamus .baris345 {
     width: 860px;
 }
 
@@ -189,6 +190,56 @@ section {
     font-size: 23px;
 }
 
+.form-kamus .row-kelima {
+    height: 200px;
+}
 
+.form-kamus .pengucapan {
+    width: 772px;
+}
+
+/* CALL OUT */
+
+.call-out .btn-tambahkosakata {
+    background-color: var(--pr-color);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.call-out .btn-pertanyaan {
+    background-color: var(--se--color);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.call-out .col-6 .col-sm {
+    padding-top: 10px;
+}
+
+.call-out .col-6 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* END CALL OUT */
 
 /* END KAMUS */
+
+/* ARTIKEL */
+
+
+
+/* END ARTIKEL */

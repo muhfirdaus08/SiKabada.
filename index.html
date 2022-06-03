@@ -74,8 +74,12 @@
                     </div>
 
                     <div class="button-beranda">
-                        <input type="button" class="mulai me-3 mt-1" value="Mulai" />
-                        <input type="button" class="selengkapnya ms-1" value="Pelajari Selengkapnya" />
+                        <a href="#kamus">
+                            <input type="button" class="mulai me-3 mt-1" value="Mulai" />
+                        </a>
+                        <a href="">
+                            <input type="button" class="selengkapnya ms-1" value="Pelajari Selengkapnya" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -117,21 +121,68 @@
                         <div class="row-three row mt-4 justify-content-start">
                             <div class="col-auto">
                                 <label for="hasilterjemahanan" class="form-label">Hasil Terjemahan</label>
-                                <input type="text" class="form-control hasiltraslate" id="hasilter" value="null" readonly />
+                                <input type="text" class="form-control baris345" id="hasilter" value="null" readonly />
                             </div>
                         </div>
 
-                        <div class="row-three row mt-4 justify-content-start">
+                        <div class="row-fourth row mt-4 justify-content-start">
                             <div class="col-auto">
                                 <label for="hasilterjemahanan" class="form-label">Pengucapan</label>
-                                <input type="text" class="form-control hasiltraslate" id="hasilter" value="null" readonly />
+                                <div class="input-group">
+                                    <input type="text" class="form-control pengucapan" value="null" aria-describedby="button-addon2" readonly />
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                        <img src="./IMG/SPEAKER.svg" alt="speaker" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fifth row mt-4 justify-content-start">
+                            <div class="col-auto">
+                                <label for="artikosakata" class="form-label">Arti Kosakata</label>
+                                <input type="text" class="form-control baris345" id="hasilter" value="null" readonly />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- CALL OUT -->
+
+            <div class="container call-out mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="./IMG/HORIZONTALLINE.png" alt="horizontal line" width="100%" />
+                    </div>
+
+                    <div class="col-6 ps-5 kalimat">
+                        <h3>Anda juga dapat menambahkan kosakata baru pada website ini</h3>
+                    </div>
+
+                    <div class="col-6 ps-5">
+                        <div class="row">
+                            <div class="col-sm ps-5">
+                                <input type="button" class="btn-tambahkosakata" value="Tambah Kosakata" />
+                            </div>
+                            <div class="col-sm">
+                                <input type="button" class="btn-pertanyaan" value="Pertanyaan" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <img src="./IMG/HORIZONTALLINE.png" alt="horizontal line" width="100%" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- END CALL OUT -->
         </section>
         <!-- END KAMUS -->
+
+        <!-- ARTIKEL -->
+
+        <!-- END ARTIKEL -->
 
         <!-- JS -->
         <script src="./JS/script.js"></script>
