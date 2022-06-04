@@ -1,9 +1,8 @@
-
 /* VARIABEL WARNA */
 :root {
     --pr-color: #6016fc;
     --se--color: rgba(255, 255, 255, 0.1);
-    --green--color: #16FCD2;
+    --green--color: #16fcd2;
 }
 
 /* BODY */
@@ -103,7 +102,6 @@ section {
 .beranda-kalimat p {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.6);
-
 }
 
 .button-beranda .mulai {
@@ -118,6 +116,20 @@ section {
     border-radius: 5px;
 }
 
+.button-beranda .mulai:hover {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 5px;
+}
+
 .button-beranda .selengkapnya {
     padding-left: 30px;
     padding-right: 30px;
@@ -129,16 +141,31 @@ section {
     border: none;
     border-radius: 5px;
 }
+
+.button-beranda .selengkapnya:hover {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 5px;
+}
 /* END BERANDA */
 
 /* KAMUS */
 
 #kamus .container h2 {
     font-size: 19px;
-    color: #16FCD2;
+    color: #16fcd2;
 }
 
-#kamus .container h3{
+#kamus .container h3 {
     font-size: 25px;
     font-weight: 700;
     color: #fff;
@@ -212,8 +239,19 @@ section {
     font-size: 19px;
 }
 
-.call-out .kolom-tombol {
-    margin-top: 10px;
+.call-out .btn-tambahkosakata:hover {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
 }
 
 .call-out .btn-pertanyaan {
@@ -226,6 +264,25 @@ section {
     height: 50px;
     border-radius: 5px;
     font-size: 19px;
+}
+
+.call-out .btn-pertanyaan:hover {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.call-out .kolom-tombol {
+    margin-top: 10px;
 }
 
 .call-out .col-6 .col-sm {
@@ -241,7 +298,6 @@ section {
 
 /* END KAMUS */
 
-
 /* EVENT */
 
 .event-container {
@@ -252,7 +308,7 @@ section {
 
 .event-container .kalimat h2 {
     font-size: 19px;
-    color: #16FCD2;
+    color: #16fcd2;
 }
 
 .event-container .kalimat h3 {
@@ -262,7 +318,7 @@ section {
 }
 
 .event-container .card-pertama {
-    background-color: #3F2379;
+    background-color: #3f2379;
 }
 .event-container .card-kedua {
     background-color: #233679;
@@ -291,7 +347,6 @@ section {
     border-color: #fff;
 }
 
-
 .event-container .col-4 {
     padding-top: 25px;
 }
@@ -301,7 +356,7 @@ section {
 
 .container-artikel .kalimat h2 {
     font-size: 19px;
-    color: #16FCD2;
+    color: #16fcd2;
 }
 
 .container-artikel .kalimat h3 {
@@ -330,7 +385,6 @@ section {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 500;
     font-size: 17px;
-
 }
 
 .container-artikel .card h {
@@ -360,6 +414,49 @@ section {
     color: #fff;
 }
 
+/* LOAD MORE */
+
+#loadmore .btn-loadmore {
+    background-color: var(--se--color);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+#loadmore .btn-loadmore:hover {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+/* LOADMORE */
+
+.artikel-row .artikel-card{
+    display: none;
+}
+
+#nocontent p{
+    background-color: var(--se--color);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+}
+/* END LOADMORE */
 
 /* END ARTIKEL */
-
