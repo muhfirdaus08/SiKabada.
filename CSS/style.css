@@ -10,7 +10,6 @@ body {
     font-family: "Noto Sans", sans-serif;
     background-image: url("../IMG/BACKGROUND-BODY.png");
     background-size: cover;
-    height: 5895px;
 }
 
 /* ALL SECTION */
@@ -342,7 +341,7 @@ section {
 
 .event-container .card:hover {
     border-style: solid;
-    border-width: 3px;
+    border-width: 1px;
     transition: all ease-in-out 0.2s;
     border-color: #fff;
 }
@@ -399,7 +398,7 @@ section {
 .container-artikel .card:hover {
     border-style: solid;
     border-color: var(--pr-color);
-    border-width: 3px;
+    border-width: 1px;
     transition: all ease-in-out 0.2s;
 }
 
@@ -415,6 +414,46 @@ section {
 }
 
 /* LOAD MORE */
+
+#sembunyikan .btn-sembunyikan {
+    background-color: var(--se--color);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+#sembunyikan .btn-sembunyikan:hover {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.artikel-row .artikel-card{
+    display: none;
+}
+
+#nocontent p{
+    background-color: var(--se--color);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+}
 
 #loadmore .btn-loadmore {
     background-color: var(--se--color);
@@ -442,21 +481,73 @@ section {
     border-radius: 5px;
     font-size: 19px;
 }
-
-/* LOADMORE */
-
-.artikel-row .artikel-card{
-    display: none;
-}
-
-#nocontent p{
-    background-color: var(--se--color);
-    color: #fff;
-    font-weight: 700;
-    border: none;
-    border-radius: 5px;
-    font-size: 19px;
-}
 /* END LOADMORE */
 
 /* END ARTIKEL */
+
+
+/* TENTANG KAMI */
+
+#tentangkami .container h2 {
+    font-size: 19px;
+    color: #16fcd2;
+}
+
+#tentangkami .container h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#tentangkami .container {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+#tentangkami .card-coloumn {
+    height: 447px;
+    background-color: var(--se--color);
+    border-radius: 5px;
+}
+
+#tentangkami .card-coloumn h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+#tentangkami .card-coloumn h5{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+#tentangkami .card-coloumn p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.6;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#tentangkami .social-media .col{
+    opacity: 0.6;
+}
+
+#tentangkami .social-media .col:hover {
+    opacity: 1;
+}
+
+#tentangkami .card-developer .card-coloumn:hover {
+    border-style: solid;
+    border-color: var(--pr-color);
+    border-width: 1px;
+}
+
+
+/* END TENTANG KAMI */
