@@ -24,10 +24,10 @@
         <!--  NAVBAR -->
         <nav class="navbar navbar-expand-lg bg-transparent navbar-dark position-fixed w-100">
             <div class="container">
-                <a class="navbar-brand sikabada fw-bold" href="#">
+                <span class="navbar-brand sikabada fw-bold" href="#">
                     <img src="IMG/LOGO.svg" alt="" width="28" class="d-inline-block align-text-center mb-1 mx-1" />
                     SiKabada.
-                </a>
+                </span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,10 +40,10 @@
                             <a class="nav-link" href="#kamus">Kamus</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Artikel</a>
+                            <a class="nav-link" href="#event">Event</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Event</a>
+                            <a class="nav-link" href="#artikel">Artikel</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="#">Tentang Kami</a>
@@ -70,7 +70,10 @@
                             Mari Melestarikan Bahasa <br />
                             Daerah yang Ada di Indonesia
                         </h3>
-                        <p>Indonesia memiliki 718 bahasa daerah yang eksistensinya wajib <br />dilindungi karena merupakan warisan sekaligus identitas bangsa</p>
+                        <p>
+                            Indonesia memiliki 718 bahasa daerah yang eksistensinya wajib <br />
+                            dilindungi karena merupakan warisan sekaligus identitas bangsa
+                        </p>
                     </div>
 
                     <div class="button-beranda">
@@ -99,7 +102,7 @@
 
                 <div class="form-kamus mt-4">
                     <div class="container justify-content-center">
-                        <div class="row g-2 justify-content-between">
+                        <div class="row gx-2 justify-content-between">
                             <div class="col-auto">
                                 <input class="form-control" type="text" placeholder="Masukan sebuah kata" aria-label="kata" />
                             </div>
@@ -154,22 +157,26 @@
                     <div class="col-12">
                         <img src="./IMG/HORIZONTALLINE.png" alt="horizontal line" width="100%" />
                     </div>
+                </div>
 
+                <div class="row">
                     <div class="col-6 ps-5 kalimat">
                         <h3>Anda juga dapat menambahkan kosakata baru pada website ini</h3>
                     </div>
 
-                    <div class="col-6 ps-5">
-                        <div class="row">
-                            <div class="col-sm ps-5">
+                    <div class="col-6 ps-5 kolom-tombol">
+                        <div class="row gx-1">
+                            <div class="col">
                                 <input type="button" class="btn-tambahkosakata" value="Tambah Kosakata" />
                             </div>
-                            <div class="col-sm">
+                            <div class="col">
                                 <input type="button" class="btn-pertanyaan" value="Pertanyaan" />
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="row">
                     <div class="col-12">
                         <img src="./IMG/HORIZONTALLINE.png" alt="horizontal line" width="100%" />
                     </div>
@@ -178,9 +185,231 @@
 
             <!-- END CALL OUT -->
         </section>
+
         <!-- END KAMUS -->
 
+        <!-- EVENT -->
+
+        <section id="event" class="position-relative">
+            <div class="container event-container mx-auto">
+                <div class="kalimat text-center">
+                    <h2 class="mb-3">EVENT</h2>
+                    <h3>
+                        Mengetahui berbagai event kebudayaan <br />
+                        yang ada di Indonesia
+                    </h3>
+                </div>
+
+                <div class="card-event">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card card-pertama text-center">
+                                <img src="./IMG/CARD-EVENT.png" class="card-img-top" alt="artikel" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Judul Event</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a href="#" class="btn btn-card">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card card-kedua text-center">
+                                <img src="./IMG/CARD-EVENT.png" class="card-img-top" alt="artikel" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Judul Event</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a href="#" class="btn btn-card">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card card-ketiga text-center">
+                                <img src="./IMG/CARD-EVENT.png" class="card-img-top" alt="artikel" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Judul Event</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a href="#" class="btn btn-card">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END EVENT -->
+
         <!-- ARTIKEL -->
+
+        <section id="artikel">
+            <div class="container container-artikel">
+                <div class="kalimat text-center">
+                    <h2 class="mb-3">ARTIKEL</h2>
+                    <h3>
+                        Ketahui lebih dalam <br />
+                        seputar kebudayaan daerah
+                    </h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <a class="artikel-button" href="#">
+                            <div class="card">
+                                <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                    <div class="row card-row-artikel">
+                                        <div class="col-2 p">
+                                            <img src="./IMG/AVATAR.png" alt="avatar" />
+                                        </div>
+
+                                        <div class="col-10 ps-4">
+                                            <p>
+                                                Rob Arace <br />
+                                                20 Mar
+                                                <span> <img src="./IMG/Ellipse.png" alt="Ellipse" /></span>
+                                                5 min read
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-4">
+                        <a class="artikel-button" href="#">
+                            <div class="card">
+                                <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                    <div class="row card-row-artikel">
+                                        <div class="col-2 p">
+                                            <img src="./IMG/AVATAR.png" alt="avatar" />
+                                        </div>
+
+                                        <div class="col-10 ps-4">
+                                            <p>
+                                                Rob Arace <br />
+                                                20 Mar
+                                                <span> <img src="./IMG/Ellipse.png" alt="Ellipse" /></span>
+                                                5 min read
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-4">
+                        <a class="artikel-button" href="#">
+                            <div class="card">
+                                <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                    <div class="row card-row-artikel">
+                                        <div class="col-2 p">
+                                            <img src="./IMG/AVATAR.png" alt="avatar" />
+                                        </div>
+
+                                        <div class="col-10 ps-4">
+                                            <p>
+                                                Rob Arace <br />
+                                                20 Mar
+                                                <span> <img src="./IMG/Ellipse.png" alt="Ellipse" /></span>
+                                                5 min read
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-4">
+                        <a class="artikel-button" href="#">
+                            <div class="card">
+                                <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                    <div class="row card-row-artikel">
+                                        <div class="col-2 p">
+                                            <img src="./IMG/AVATAR.png" alt="avatar" />
+                                        </div>
+
+                                        <div class="col-10 ps-4">
+                                            <p>
+                                                Rob Arace <br />
+                                                20 Mar
+                                                <span> <img src="./IMG/Ellipse.png" alt="Ellipse" /></span>
+                                                5 min read
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-4">
+                        <a class="artikel-button" href="#">
+                            <div class="card">
+                                <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                    <div class="row card-row-artikel">
+                                        <div class="col-2 p">
+                                            <img src="./IMG/AVATAR.png" alt="avatar" />
+                                        </div>
+
+                                        <div class="col-10 ps-4">
+                                            <p>
+                                                Rob Arace <br />
+                                                20 Mar
+                                                <span> <img src="./IMG/Ellipse.png" alt="Ellipse" /></span>
+                                                5 min read
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-4">
+                        <a class="artikel-button" href="#">
+                            <div class="card">
+                                <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                    <div class="row card-row-artikel">
+                                        <div class="col-2 p">
+                                            <img src="./IMG/AVATAR.png" alt="avatar" />
+                                        </div>
+
+                                        <div class="col-10 ps-4">
+                                            <p>
+                                                Rob Arace <br />
+                                                20 Mar
+                                                <span> <img src="./IMG/Ellipse.png" alt="Ellipse" /></span>
+                                                5 min read
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- END ARTIKEL -->
 

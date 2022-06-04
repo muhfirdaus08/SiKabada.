@@ -22,7 +22,7 @@ section {
 
 /* NAVBAR */
 .nav-color {
-    background-color: var(--se--color);
+    background-color: #5f16fc44;
     transition: all ease-in-out 0.3s;
     z-index: 1;
 }
@@ -45,7 +45,7 @@ section {
 .nav-link {
     font-size: 19px;
     font-weight: 400;
-    opacity: 0.8;
+    color: #fff;
 }
 
 .masuk-daftar {
@@ -212,6 +212,10 @@ section {
     font-size: 19px;
 }
 
+.call-out .kolom-tombol {
+    margin-top: 10px;
+}
+
 .call-out .btn-pertanyaan {
     background-color: var(--se--color);
     color: #fff;
@@ -233,13 +237,129 @@ section {
     padding-bottom: 10px;
 }
 
-
 /* END CALL OUT */
 
 /* END KAMUS */
 
+
+/* EVENT */
+
+.event-container {
+    background-color: #221048;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.event-container .kalimat h2 {
+    font-size: 19px;
+    color: #16FCD2;
+}
+
+.event-container .kalimat h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.event-container .card-pertama {
+    background-color: #3F2379;
+}
+.event-container .card-kedua {
+    background-color: #233679;
+}
+.event-container .card-ketiga {
+    background-color: #792366;
+}
+
+.event-container .btn-card {
+    color: var(--pr-color);
+    width: 234px;
+    height: 40px;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.event-container .card {
+    color: #fff;
+}
+
+.event-container .card:hover {
+    border-style: solid;
+    border-width: 3px;
+    transition: all ease-in-out 0.2s;
+    border-color: #fff;
+}
+
+
+.event-container .col-4 {
+    padding-top: 25px;
+}
+/* END EVENT */
+
 /* ARTIKEL */
 
+.container-artikel .kalimat h2 {
+    font-size: 19px;
+    color: #16FCD2;
+}
+
+.container-artikel .kalimat h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.container-artikel {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.container-artikel .col-4 {
+    padding-top: 25px;
+}
+
+.container-artikel .card {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.container-artikel .card p {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    font-size: 17px;
+
+}
+
+.container-artikel .card h {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.container-artikel .card-body {
+    padding-left: 0px;
+}
+
+.container-artikel .card:hover {
+    border-style: solid;
+    border-color: var(--pr-color);
+    border-width: 3px;
+    transition: all ease-in-out 0.2s;
+}
+
+.container-artikel .card-body .btn-artikel {
+    color: #fff;
+    font-weight: 700;
+    border: none;
+}
+
+.container-artikel .artikel-button {
+    text-decoration: none;
+    color: #fff;
+}
 
 
 /* END ARTIKEL */
+
