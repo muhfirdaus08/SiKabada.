@@ -549,5 +549,55 @@ section {
     border-width: 1px;
 }
 
-
 /* END TENTANG KAMI */
+
+/* FOOTER */
+
+.footer-tag .container {
+    background-color: #221048;
+    border-radius: 30px 30px 0 0;
+    height: 350px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 70px;
+    color: #fff;
+
+}
+
+.row-footer .sikabada a{
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.row-footer img {
+    padding-top: 0px;
+}
+
+.row-footer h5 {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.row-footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+}
+
+.row-footer p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.row-footer a:hover {
+    color: #fff;
+}
+
+.row-footer .top {
+    color: #fff;
+    font-weight: 500;
+}
+/* END FOOTER */
