@@ -60,6 +60,20 @@ section {
     color: #fff;
 }
 
+.masuk-daftar .button-masuk:hover {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 39px;
+    background-color: transparent;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 3px;
+}
+
 .masuk-daftar .button-daftar {
     padding-left: 30px;
     padding-right: 30px;
@@ -70,12 +84,18 @@ section {
     color: #fff;
 }
 
-.masuk-daftar #masuk:hover {
-    font-weight: 700;
-}
-
 .masuk-daftar #daftar:hover {
-    font-weight: 700;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 39px;
+    background-color: transparent;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 3px;
 }
 
 /* END NAVBAR */
@@ -442,11 +462,11 @@ section {
     font-size: 19px;
 }
 
-.artikel-row .artikel-card{
+.artikel-row .artikel-card {
     display: none;
 }
 
-#nocontent p{
+#nocontent p {
     background-color: var(--se--color);
     color: #fff;
     font-weight: 700;
@@ -485,7 +505,6 @@ section {
 
 /* END ARTIKEL */
 
-
 /* TENTANG KAMI */
 
 #tentangkami .container h2 {
@@ -511,21 +530,21 @@ section {
     border-radius: 5px;
 }
 
-#tentangkami .card-coloumn h4{
+#tentangkami .card-coloumn h4 {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
     margin-top: 18px;
 }
 
-#tentangkami .card-coloumn h5{
+#tentangkami .card-coloumn h5 {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
     opacity: 0.6;
 }
 
-#tentangkami .card-coloumn p{
+#tentangkami .card-coloumn p {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
@@ -535,7 +554,7 @@ section {
     padding-bottom: 10px;
 }
 
-#tentangkami .social-media .col{
+#tentangkami .social-media .col {
     opacity: 0.6;
 }
 
@@ -561,10 +580,9 @@ section {
     padding-right: 100px;
     padding-top: 70px;
     color: #fff;
-
 }
 
-.row-footer .sikabada a{
+.row-footer .sikabada a {
     color: #fff;
     font-size: 23px;
     font-weight: 600;
