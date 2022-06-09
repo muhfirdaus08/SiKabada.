@@ -879,3 +879,90 @@ section {
 
 /* ======================END KRITIK-SARAN HTML=======================*/
 
+
+/* ======================PERTANYAAN HTML=======================*/
+
+.pertanyaan-container {
+    height: 500px;
+    width: 700px;
+    background-color: #221048;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 22.25px;
+}
+
+.pertanyaan-container .row .col-6 .logokembali .tulisan a {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.pertanyaan-container .row .col-6 .logokembali .tulisan a:hover {
+    color: #fff;
+    text-decoration-line: underline;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.pertanyaan-container .row .col-6 h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.pertanyaan-container .form-pertanyaan .tombol-pertanyaan .pertanyaan {
+    width: 100%;
+    background-color: var(--pr-color);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.375rem;
+    height: 58px;
+    font-size: 24px;
+}
+
+.pertanyaan-container .form-pertanyaan .tombol-pertanyaan .pertanyaan:hover {
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.375rem;
+    height: 58px;
+    font-size: 24px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 3px;
+}
+
+.pertanyaan-container .form-pertanyaan .sudah-akun p {
+    color: #fff;
+}
+
+.pertanyaan-container .form-pertanyaan .sudah-akun a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--pr-color);
+}
+
+.pertanyaan-container .form-pertanyaan .form-floating .form-control {
+    background-color: var(--se--color);
+    border: none;
+    color: #fff;
+}
+
+.pertanyaan-container .form-pertanyaan .form-floating {
+    color: #fff;
+}
+
+.pertanyaan-container .form-pertanyaan .form-check {
+    color: #fff;
+}
+
+/* ======================END PERTANYAAN HTML=======================*/
+
+
+
