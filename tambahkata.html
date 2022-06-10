@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Blog</title>
+        <title>Tambah Kata</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
 
         <!-- LOGO TITLE -->
@@ -17,13 +17,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="CSS/style.css" />
+        <link rel="stylesheet" href="CSS/tambahkata.css" />
     </head>
     <body>
-        <div class="blog-container p-5">
-            <div class="row blog-kembali">
+        <div class="tambahkata-container p-5">
+            <div class="row tambahkata-kembali">
                 <div class="col-6" style="color: #16fcd2; font-weight: 700">
-                    <h3>Membuat Blog</h3>
+                    <h3>Tambah Kata</h3>
                 </div>
                 <div class="col-6 d-flex align-items-center justify-content-end">
                     <div class="logokembali d-flex align-items-center">
@@ -39,22 +39,36 @@
                 </div>
             </div>
 
-            <div class="row form-blog">
+            <div class="row form-tambahkata">
                 <form action="" method="">
                     <div class="form-floating mt-4 mb-4">
                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                        <label for="floatingInput">Nama</label>
+                        <label for="floatingInput">Nama Pengunggah</label>
                     </div>
-                    <div class="form-floating mb-4">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 190px"></textarea>
-                        <label for="floatingTextarea">Mulai menulis disini</label>
+                    <select class="form-select mb-4" aria-label="Default select example">
+                        <option selected>Pilih Bahasa</option>
+                        <option class="option" value="1">Sasak</option>
+                        <option class="option" value="2">Sumbawa</option>
+                        <option class="option" value="3">Mbojo</option>
+                    </select>
+                    <div class="form-floating mt-4 mb-4">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                        <label for="floatingInput">Kata yang Akan Ditambah (Bahasa Daerah)</label>
                     </div>
                     <div class="mb-4">
-                        <label for="formFile" class="form-label">Tambah foto atau video</label>
+                        <label for="formFile" class="form-label">Tambah Audio Bahasa Daerah (mp3, wav)</label>
                         <input class="input-group form-control" type="file" id="formFile" />
                     </div>
-                    <div class="tombol-blog">
-                        <button class="blog" name="">Kirim</button>
+                    <div class="form-floating mt-4 mb-4">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                        <label for="floatingInput">Arti Kata yang Akan Ditambah (Bahasa Indonesia)</label>
+                    </div>
+                    <div class="mb-4">
+                        <label for="formFile" class="form-label">Tambah Audio Bahasa Indonesia (mp3, wav)</label>
+                        <input class="input-group form-control" type="file" id="formFile" />
+                    </div>
+                    <div class="tombol-tambahkata">
+                        <button class="tambahkata" name="">Kirim</button>
                     </div>
                 </form>
             </div>

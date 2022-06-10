@@ -10,7 +10,7 @@
 /* BODY */
 body {
     font-family: "Noto Sans", sans-serif;
-    background-image: url("../IMG/BACKGROUND-BODY.png");
+    background-image: url("/IMG/BACKGROUND-BODY.png");
     background-size: cover;
 }
 
@@ -965,7 +965,7 @@ section {
 /* ======================BLOG HTML=======================*/
 
 .blog-container {
-    height: 580px;
+    height: 600px;
     width: 700px;
     background-color: #221048;
     position: absolute;
@@ -1050,11 +1050,15 @@ section {
     color: #fff;
 }
 
-.blog-container .row .choose-file .input-group-text {
-    background-color: var(--pr-color);
+.blog-container .form-blog .input-group {
+    background-color: var(--se--color);
     border: none;
     color: #fff;
-    font-weight: 700;
+}
+
+.blog-container .form-blog .form-label {
+    color: #fff;
+    
 }
 
 /* ======================END BLOG HTML=======================*/
@@ -1062,7 +1066,7 @@ section {
 /* ======================BLOG HTML=======================*/
 
 .buatevent-container {
-    height: 580px;
+    height: 600px;
     width: 700px;
     background-color: #221048;
     position: absolute;
@@ -1147,11 +1151,16 @@ section {
     color: #fff;
 }
 
-.buatevent-container .row .choose-file .input-group-text {
-    background-color: var(--pr-color);
+.buatevent-container .form-buatevent .input-group {
+    background-color: var(--se--color);
     border: none;
     color: #fff;
-    font-weight: 700;
+}
+
+.buatevent-container .form-buatevent .form-label {
+    color: #fff;
+    
 }
 
 /* ======================END EVENT HTML=======================*/
+
