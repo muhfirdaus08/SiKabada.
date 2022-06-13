@@ -108,6 +108,39 @@ section {
 
 /* BERANDA */
 
+/* TYPING EFFECT */
+
+#beranda .wrapper {
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    color: var(--green--color);
+}
+
+#beranda .typing-demo {
+    width: 14ch;
+    animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* END TYPING EFFECT */
+
 #beranda .container {
     padding-top: 5rem;
     padding-bottom: 12rem;
@@ -1058,7 +1091,6 @@ section {
 
 .blog-container .form-blog .form-label {
     color: #fff;
-    
 }
 
 /* ======================END BLOG HTML=======================*/
@@ -1159,8 +1191,52 @@ section {
 
 .buatevent-container .form-buatevent .form-label {
     color: #fff;
-    
 }
 
 /* ======================END EVENT HTML=======================*/
 
+
+/* ======================TENTANG SIKABADA HTML=======================*/
+
+
+.beranda-tentang-kalimat h1 {
+    font-size: 20px;
+    color: var(--green--color);
+}
+
+.beranda-tentang-kalimat h3 {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.beranda-tentang-kalimat p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.content-beranda .tentang-line {
+    padding-top: 50px;
+    padding-bottom: 62px;
+}
+
+.content-beranda .text-tentang p {
+    color: #fff;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 35px;
+}
+
+.content-beranda .text-tentang h3 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    justify-content: start;
+}
+
+section .line-tentangsikabada {
+    padding-top: 0rem;
+}
+
+/* ======================END TENTANG SIKABADA HTML=======================*/
