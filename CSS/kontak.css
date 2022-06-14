@@ -1,0 +1,270 @@
+/* VARIABEL WARNA */
+:root {
+    --pr-color: #6016fc;
+    --se--color: rgba(255, 255, 255, 0.1);
+    --green--color: #16fcd2;
+}
+
+/* INDEX */
+
+/* BODY */
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-image: url("/IMG/BACKGROUND-BODY.png");
+    background-size: cover;
+}
+
+/* ALL SECTION */
+
+section {
+    padding-top: 10rem;
+}
+
+/* NAVBAR */
+.nav-color {
+    background-color: #5f16fc44;
+    transition: all ease-in-out 0.3s;
+    z-index: 1;
+}
+
+.bg-transparent {
+    transition: all ease-in-out 0.3s;
+}
+
+.navbar-brand.sikabada {
+    font-size: 29px;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+    font-size: 19px;
+    opacity: 1;
+    color: #fff;
+}
+
+.nav-link {
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.masuk-daftar {
+    font-size: 19px;
+}
+
+.masuk-daftar a {
+    text-decoration: none;
+}
+
+.masuk-daftar .button-masuk {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 39px;
+    background-color: var(--se--color);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.masuk-daftar .button-masuk:hover {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 39px;
+    background-color: transparent;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 3px;
+}
+
+.masuk-daftar .button-daftar {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 39px;
+    background-color: var(--pr-color);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.masuk-daftar #daftar:hover {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 39px;
+    background-color: transparent;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 3px;
+}
+
+/* END NAVBAR */
+
+/* FOOTER */
+
+.footer-tag .container {
+    background-color: #221048;
+    border-radius: 30px 30px 0 0;
+    height: 350px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 70px;
+    color: #fff;
+}
+
+.row-footer .sikabada a {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.row-footer img {
+    padding-top: 0px;
+}
+
+.row-footer h5 {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.row-footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+}
+
+.row-footer p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.row-footer a:hover {
+    color: #fff;
+}
+
+.row-footer .top {
+    color: #fff;
+    font-weight: 500;
+}
+/* END FOOTER */
+
+/* CALL OUT */
+
+.call-out .btn-tambahkosakata {
+    background-color: var(--pr-color);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.call-out .btn-tambahkosakata:hover {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.call-out .btn-pertanyaan {
+    background-color: var(--se--color);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.call-out .btn-pertanyaan:hover {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.call-out .kolom-tombol {
+    margin-top: 10px;
+}
+
+.call-out .col-6 .col-sm {
+    padding-top: 10px;
+}
+
+.call-out .col-6 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* END CALL OUT */
+
+
+.kontak .row h1 {
+    font-size: 16px;
+    color: var(--green--color);
+}
+
+.kontak .row h3 {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    width: 300px;
+}
+
+.kontak .kirim-pesan {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 375px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.kontak .kirim-pesan .form-control {
+    background-color: var(--se--color);
+    border: none;
+    color: #fff;
+}
+
+.kontak .kirim-pesan .form-floating {
+    color: #fff;
+}
+
+.kontak .kirim-pesan .button-kirim {
+    background-color: var(--pr-color);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 19px;
+    width: 340px;
+    height: 38px;
+    border-radius: 5px;
+}
