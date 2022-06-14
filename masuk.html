@@ -18,6 +18,9 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="CSS/style.css" />
+
+        <!-- JS SWEET ALERT -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
         <div class="masuk-container p-5">
@@ -42,7 +45,7 @@
             <div class="row form-masuk">
                 <form action="" method="">
                     <div class="form-floating mt-4 mb-4">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" />
                         <label for="floatingInput">Nama pengguna</label>
                     </div>
                     <div class="form-floating mb-4">
@@ -54,7 +57,7 @@
                         <label class="form-check-label" for="exampleCheck1">ingat saya</label>
                     </div>
                     <div class="tombol-masuk">
-                        <button class="masuk" name="">Masuk</button>
+                        <button type="submit" onclick="myAlertMasuk()" class="masuk" name="">Masuk</button>
                     </div>
                     <div class="sudah-akun mt-3">
                         <p>Belum memiliki akun? <a href="daftar.html">Daftar</a></p>
@@ -62,6 +65,8 @@
                 </form>
             </div>
         </div>
+        <!-- JS -->
+        <script src="/JS/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>

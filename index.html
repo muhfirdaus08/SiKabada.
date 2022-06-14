@@ -24,6 +24,9 @@
 
         <!-- LOADMORE JQUERY -->
         <script type="text/javascript" src="/JS/loadmore.js"></script>
+
+        <!-- JS SWEET ALERT -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
 
     <body>
@@ -91,11 +94,9 @@
 
                     <div class="button-beranda">
                         <a href="#kamus">
-                            <input type="button" class="mulai me-3 mt-1" value="Mulai" />
+                            <button class="mulai me-3 mt-1">Mulai</button>
                         </a>
-                        <a href="daftar.html">
-                            <input type="button" class="selengkapnya ms-1" value="Pelajari Selengkapnya" />
-                        </a>
+                        <button onclick="myAlertWarning()" class="selengkapnya ms-1">Pelajari Selengkapnya</button>
                     </div>
                 </div>
             </div>
@@ -180,14 +181,10 @@
                     <div class="col-6 ps-5 kolom-tombol">
                         <div class="row gx-1">
                             <div class="col">
-                                <a href="tambahkata.html" style="text-decoration: none;">
-                                    <input type="button" class="btn-tambahkosakata" value="Tambah Kosakata"/>
-                                </a>
+                                <button onclick="myAlertWarning()" class="btn-tambahkosakata">Tambah Kosakata</button>
                             </div>
-                            <div class="col">       
-                                <a href="pertanyaan.html" style="text-decoration: none;">
-                                    <input type="button" class="btn-pertanyaan" value="Pertanyaan" />
-                                </a>
+                            <div class="col">
+                                <button onclick="myAlertWarning()" class="btn-pertanyaan">Pertanyaan</button>
                             </div>
                         </div>
                     </div>
@@ -225,7 +222,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Judul Event</h5>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <a href="#" class="btn btn-card">Detail</a>
+                                    <button onclick="myAlertWarning()" class="btn btn-card">Detail</button>
                                 </div>
                             </div>
                         </div>
@@ -235,7 +232,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Judul Event</h5>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <a href="#" class="btn btn-card">Detail</a>
+                                    <button onclick="myAlertWarning()" class="btn btn-card">Detail</button>
                                 </div>
                             </div>
                         </div>
@@ -245,7 +242,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Judul Event</h5>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <a href="#" class="btn btn-card">Detail</a>
+                                    <button onclick="myAlertWarning()" class="btn btn-card">Detail</button>
                                 </div>
                             </div>
                         </div>
@@ -270,7 +267,7 @@
 
                 <div class="row artikel-row">
                     <div class="col-4 artikel-card">
-                        <a class="artikel-button" href="#">
+                        <a onclick="myAlertWarning()" class="artikel-button">
                             <div class="card">
                                 <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
                                 <div class="card-body pb-0">
@@ -294,9 +291,8 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="col-4 artikel-card">
-                        <a class="artikel-button" href="#">
+                        <a onclick="myAlertWarning()" class="artikel-button">
                             <div class="card">
                                 <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
                                 <div class="card-body pb-0">
@@ -320,9 +316,8 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="col-4 artikel-card">
-                        <a class="artikel-button" href="#">
+                        <a onclick="myAlertWarning()" class="artikel-button">
                             <div class="card">
                                 <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
                                 <div class="card-body pb-0">
@@ -346,9 +341,8 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="col-4 artikel-card">
-                        <a class="artikel-button" href="#">
+                        <a onclick="myAlertWarning()" class="artikel-button">
                             <div class="card">
                                 <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
                                 <div class="card-body pb-0">
@@ -372,9 +366,8 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="col-4 artikel-card">
-                        <a class="artikel-button" href="#">
+                        <a onclick="myAlertWarning()" class="artikel-button">
                             <div class="card">
                                 <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
                                 <div class="card-body pb-0">
@@ -398,35 +391,8 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="col-4 artikel-card">
-                        <a class="artikel-button" href="#">
-                            <div class="card">
-                                <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
-                                    <div class="row card-row-artikel">
-                                        <div class="col-2 p">
-                                            <img src="./IMG/AVATAR.png" alt="avatar" />
-                                        </div>
-
-                                        <div class="col-10 ps-4">
-                                            <p>
-                                                Rob Arace <br />
-                                                20 Mar
-                                                <span> <img src="./IMG/Ellipse.png" alt="Ellipse" /></span>
-                                                5 min read
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-4 artikel-card">
-                        <a class="artikel-button" href="#">
+                        <a onclick="myAlertWarning()" class="artikel-button">
                             <div class="card">
                                 <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
                                 <div class="card-body pb-0">
@@ -450,9 +416,8 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="col-4 artikel-card">
-                        <a class="artikel-button" href="#">
+                        <a onclick="myAlertWarning()" class="artikel-button">
                             <div class="card">
                                 <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
                                 <div class="card-body pb-0">
@@ -476,9 +441,8 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="col-4 artikel-card">
-                        <a class="artikel-button" href="#">
+                        <a onclick="myAlertWarning()" class="artikel-button">
                             <div class="card">
                                 <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
                                 <div class="card-body pb-0">
@@ -502,9 +466,8 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="col-4 artikel-card">
-                        <a class="artikel-button" href="#">
+                        <a onclick="myAlertWarning()" class="artikel-button">
                             <div class="card">
                                 <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
                                 <div class="card-body pb-0">
@@ -528,9 +491,8 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="col-4 artikel-card">
-                        <a class="artikel-button" href="#">
+                        <a onclick="myAlertWarning()" class="artikel-button">
                             <div class="card">
                                 <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
                                 <div class="card-body pb-0">
@@ -554,12 +516,36 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="col-4 artikel-card">
-                        <a class="artikel-button" href="#">
+                        <a onclick="myAlertWarning()" class="artikel-button">
                             <div class="card">
                                 <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
-                                <div class="card-body">
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                    <div class="row card-row-artikel">
+                                        <div class="col-2 p">
+                                            <img src="./IMG/AVATAR.png" alt="avatar" />
+                                        </div>
+
+                                        <div class="col-10 ps-4">
+                                            <p>
+                                                Rob Arace <br />
+                                                20 Mar
+                                                <span> <img src="./IMG/Ellipse.png" alt="Ellipse" /></span>
+                                                5 min read
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 artikel-card">
+                        <a onclick="myAlertWarning()" class="artikel-button">
+                            <div class="card">
+                                <img src="./IMG/CARD-ARTIKEL.png" class="card-img-top" alt="artikel" />
+                                <div class="card-body pb-0">
                                     <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
                                     <div class="row card-row-artikel">
@@ -705,14 +691,10 @@
                     <div class="col-6 ps-5 kolom-tombol">
                         <div class="row">
                             <div class="col">
-                                <a href="kritik-saran.html" style="text-decoration: none">
-                                    <input type="button" class="ms-5 btn-tambahkosakata" value="Kritik/Saran" />
-                                </a>
+                                <button onclick="myAlertWarning()" class="ms-5 btn-tambahkosakata">Kritik/Saran</button>
                             </div>
                             <div class="col">
-                                <a href="pertanyaan.html" style="text-decoration: none">
-                                    <input type="button" class="btn-pertanyaan" value="Pertanyaan" />
-                                </a>
+                                <button onclick="myAlertWarning()" class="btn-pertanyaan">Pertanyaan</button>
                             </div>
                         </div>
                     </div>
