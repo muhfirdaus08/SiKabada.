@@ -75,6 +75,7 @@ function myAlertKritikSaran() {
 function myAlertPesan() {
     swal("Berhasil", "Pesan Berhasil Terkirim", "success");
 }
+
 // ALERT Kosa Kata
 
 function myAlertKosakata() {
@@ -86,6 +87,7 @@ function myAlertKosakata() {
 function myAlertArtikel() {
     swal("Berhasil", "Tulisan Artikel Anda Berhasil Terkirim", "success");
 }
+
 // ALERT Event
 
 function myAlertEvent() {

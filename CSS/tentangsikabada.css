@@ -10,7 +10,7 @@
 /* BODY */
 body {
     font-family: "Noto Sans", sans-serif;
-    background-image: url("/IMG/BACKGROUND-BODY.png");
+    background-image: url("../IMG/BACKGROUND-BODY.png");
     background-size: cover;
 }
 

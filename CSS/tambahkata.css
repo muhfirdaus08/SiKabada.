@@ -8,7 +8,7 @@
 /* ======================TAMBAH KATA HTML=======================*/
 body {
     font-family: "Noto Sans", sans-serif;
-    background-image: url("/IMG/BACKGROUND-BODY.png");
+    background-image: url("../IMG/BACKGROUND-BODY.png");
     height: 850px;
 }
 
