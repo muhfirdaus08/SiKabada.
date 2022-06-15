@@ -15,7 +15,7 @@ function query($query) {
 }
 
 // DAFTAR
-function daftar($data) {
+function function_daftar($data) {
     global $conn;
 
     $namapengguna = strtolower(stripslashes($data["namapengguna"]));
@@ -27,7 +27,6 @@ function daftar($data) {
         echo "<script>
                 alert('konfirmasi kata sandi tidak sesuai');
             </script>";
-
         return false;
     }
 }

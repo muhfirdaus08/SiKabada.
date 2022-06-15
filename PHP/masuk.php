@@ -1,9 +1,24 @@
 <?php 
 
+require 'fungsi.php';
+
+if(isset( $_POST["masukTombol"]) ) {
+
+    var_dump($_POST);
+    
+    if( function_daftar($_POST) > 0) {
+        echo "<script>
+        
+                alert('Berhasil Mendaftar');
+        
+            </script>";
+    } else {
+        echo mysqli_error($conn);
+    }
+
+}
 
 ?>
-
-
 
 
 <!DOCTYPE html>
@@ -11,13 +26,13 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Masuk</title>
+        <title>Daftar</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
 
         <!-- LOGO TITLE -->
         <link rel="icon" href="../IMG/LOGO.svg" type="image/x-icon" />
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
 
         <!-- FONT -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,8 +46,8 @@
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
-        <div class="masuk-container p-5">
-            <div class="row masuk-kembali">
+        <div class="daftar-container p-5">
+            <div class="row daftar-kembali">
                 <div class="col-6" style="color: #16fcd2; font-weight: 700">
                     <h3>Masuk</h3>
                 </div>
@@ -44,37 +59,39 @@
                             </a>
                         </div>
                         <div class="tulisan flex-grow-1 ms-1">
-                            <a href="index-unlogin.html">Kembali</a>
+                            <a href="../index-unlogin.html">Kembali</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row form-masuk">
-                <form action="" method="">
+            <div class="row form-daftar">
+                <form action="" method="POST">
                     <div class="form-floating mt-4 mb-4">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                        <label for="floatingInput">Nama pengguna</label>
+                        <input type="text" class="form-control" name="namapengguna" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Nama Pengguna</label>
                     </div>
                     <div class="form-floating mb-4">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                        <input type="password" class="form-control" name="katasandi1" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Kata Sandi</label>
                     </div>
                     <div class="form-check mb-4 ms-3">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                        <label class="form-check-label" for="exampleCheck1">ingat saya</label>
+                        <input type="checkbox" class="form-check-input" name="ingatsaya" id="exampleCheck1" />
+                        <label class="form-check-label" for="exampleCheck1" style="color: #fff;">ingat saya</label>
                     </div>
-                    <div class="tombol-masuk">
-                        <button type="submit" onclick="myAlertMasuk()" class="masuk" name="">Masuk</button>
+                    <div class="tombol-daftar">
+                        <button type="submit" name="masukTombol" class="daftar mb-3">Masuk</button>
                     </div>
-                    <div class="sudah-akun mt-3">
-                        <p>Belum memiliki akun? <a href="daftar.html">Daftar</a></p>
+                    <div class="sudah-akun">
+                        <p>Belum memiliki akun? <a href="daftar.php">Daftar</a></p>
                     </div>
                 </form>
-            </div>
+            </div>        
         </div>
+
         <!-- JS -->
         <script src="../JS/script.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>

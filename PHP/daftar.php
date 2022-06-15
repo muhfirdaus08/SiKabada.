@@ -2,9 +2,11 @@
 
 require 'fungsi.php';
 
-if(isset( $_POST["tombolDaftar"]) ) {
+if(isset( $_POST["daftarTombol"]) ) {
+
+    var_dump($_POST);
     
-    if( daftar($_POST) > 0) {
+    if( function_daftar($_POST) > 0) {
         echo "<script>
         
                 alert('Berhasil Mendaftar');
@@ -17,7 +19,6 @@ if(isset( $_POST["tombolDaftar"]) ) {
 }
 
 ?>
-
 
 
 <!DOCTYPE html>
@@ -58,7 +59,7 @@ if(isset( $_POST["tombolDaftar"]) ) {
                             </a>
                         </div>
                         <div class="tulisan flex-grow-1 ms-1">
-                            <a href="index-unlogin.html">Kembali</a>
+                            <a href="../index-unlogin.html">Kembali</a>
                         </div>
                     </div>
                 </div>
@@ -67,25 +68,25 @@ if(isset( $_POST["tombolDaftar"]) ) {
             <div class="row form-daftar">
                 <form action="" method="POST">
                     <div class="form-floating mt-4 mb-4">
-                        <input type="text" class="form-control" id="namapengguna" placeholder="name@example.com" nama="namapengguna"/>
-                        <label for="floatingInput">Nama pengguna</label>
+                        <input type="text" class="form-control" name="namapengguna" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Nama Pengguna</label>
                     </div>
                     <div class="form-floating mb-4">
-                        <input type="password" class="form-control" id="katasandi2" placeholder="Password" nama="katasandi"/>
+                        <input type="password" class="form-control" name="katasandi1" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Kata Sandi</label>
                     </div>
                     <div class="form-floating mb-4">
-                        <input type="password" class="form-control" id="katasandi2" placeholder="Password" nama="katasandi2"/>
+                        <input type="password" class="form-control" name="katasandi2" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Konfirmasi Kata Sandi</label>
                     </div>
                     <div class="tombol-daftar">
-                        <button type="submit" name="tombolDaftar" class="daftar">Daftar</button>
+                        <button type="submit" name="daftarTombol" class="daftar mb-3">Daftar</button>
                     </div>
-                    <div class="sudah-akun mt-3">
+                    <div class="sudah-akun">
                         <p>Sudah memiliki akun? <a href="masuk.php">Masuk</a></p>
                     </div>
                 </form>
-            </div>
+            </div>        
         </div>
 
         <!-- JS -->
