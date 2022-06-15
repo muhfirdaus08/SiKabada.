@@ -1,3 +1,25 @@
+<?php 
+
+require 'fungsi.php';
+
+if(isset( $_POST["tombolDaftar"]) ) {
+    
+    if( daftar($_POST) > 0) {
+        echo "<script>
+        
+                alert('Berhasil Mendaftar');
+        
+            </script>";
+    } else {
+        echo mysqli_error($conn);
+    }
+
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -43,24 +65,24 @@
             </div>
 
             <div class="row form-daftar">
-                <form action="function.php" method="POST">
+                <form action="" method="POST">
                     <div class="form-floating mt-4 mb-4">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                        <input type="text" class="form-control" id="namapengguna" placeholder="name@example.com" nama="namapengguna"/>
                         <label for="floatingInput">Nama pengguna</label>
                     </div>
                     <div class="form-floating mb-4">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                        <input type="password" class="form-control" id="katasandi2" placeholder="Password" nama="katasandi"/>
                         <label for="floatingPassword">Kata Sandi</label>
                     </div>
                     <div class="form-floating mb-4">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                        <input type="password" class="form-control" id="katasandi2" placeholder="Password" nama="katasandi2"/>
                         <label for="floatingPassword">Konfirmasi Kata Sandi</label>
                     </div>
                     <div class="tombol-daftar">
                         <button type="submit" name="tombolDaftar" class="daftar">Daftar</button>
                     </div>
                     <div class="sudah-akun mt-3">
-                        <p>Sudah memiliki akun? <a href="masuk.html">Masuk</a></p>
+                        <p>Sudah memiliki akun? <a href="masuk.php">Masuk</a></p>
                     </div>
                 </form>
             </div>
